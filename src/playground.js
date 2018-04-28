@@ -3,7 +3,7 @@ import _element from './element';
 import circle from './circle';
 import rectangle from './rectangle';
 
-const app = new PIXI.Application(1280, 720, { 
+const app = new PIXI.Application(1280, 720, {
   antialias: true,
   backgroundColor: 0xffffff
 });
@@ -18,4 +18,12 @@ const addBehaviour = (fun) => {
   app.ticker.add(delta => fun(delta));
 };
 
-export { app, addBehaviour, element, circle, rectangle };
+const events = {
+  onLevelFinished: () => {}
+}
+
+const finishLevel = () => {
+  events.onLevelFinished();
+}
+
+export { app, addBehaviour, element, circle, rectangle, events, finishLevel };
