@@ -26,7 +26,7 @@ You can also make your own development environment, just make sure to add this s
 ###### Pixi.js App
 <a href="#app" name="app">#</a> playground.<b>app</b>
 
-Exposes the Pixi.js app that runs under edPlayground's code, you can use it as you want, even mixing pixi.js code with the playground specific funtions.
+Exposes the Pixi.js app that runs under edPlayground's code, you can use it as you want, even mixing pixi.js code with edPlayground's specific funtions.
 
 ###### Basic shapes
 
