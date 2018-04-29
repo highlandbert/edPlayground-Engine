@@ -5,7 +5,7 @@ const sprite = (x, y, name, styles) => {
 
   const style = new Style(styles);
 
-  const g = PIXI.Sprite.fromImage(`assets/${name}`);
+  const g = PIXI.Sprite.fromImage(`${name}`);
 
   g.anchor.set(0.5);
   g.x = x;
