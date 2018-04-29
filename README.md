@@ -16,7 +16,7 @@ Select **Fork** to start developing.
 
 You can also make your own development environment, just make sure to add this script tag at the bottom of your html file and before the level script.
 
-```
+```html
 <script src="http://localhost:8080/cdn/playground.js"></script>
 ```
 *Coming soon (localhost is a placeholder here)*
@@ -44,7 +44,7 @@ Creates and returns a circle at **x**, **y** position, of **r** radius and with 
 
 Used for styling rectangles and circles
 
-```
+```javascript
 {
   lineWidth: 0,
   borderRadius: 0,
@@ -72,7 +72,7 @@ Every basic shape and every sprite are a [Pixi.js Container](http://pixijs.downl
 
 Creates and returns an **element**. The **container** can be a rectangle, a circle or a sprite. If you set **isInteractive** to **true**, you will be able to set a functions that triggers when the element is clicked or tapped.
 
-```
+```javascript
 var circle = playground.circle(200, 200, 25, { fillColor: 0xFFFF0B })
 var player = playground.element.create(circle, true);
 
@@ -92,12 +92,12 @@ An element is also a **container**, but unlike basic shapes or sprites, elements
 
 These functions are shortcuts:
 
-```
+```javascript
 var circle = playground.circle(200, 200, 25, { fillColor: 0xFFFF0B });
 var player = playground.element.create(circle, true);
 ```
 *VS*
-```
+```javascript
 var player = playground.element.circle(200, 200, 35, { fillColor: 0xFFFF0B }, true);
 ```
 
