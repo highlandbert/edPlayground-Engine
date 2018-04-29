@@ -19,12 +19,12 @@ const element = (app) => ({
     return container;
   },
 
-  circle: (x, y, r, styles) => element(app).create(circle(x, y, r, styles)),
+  circle: (x, y, r, styles, isInteractive) => element(app).create(circle(x, y, r, styles), isInteractive),
 
-  rectangle: (x, y, w, h, styles) => element(app).create(rectangle(x, y, w, h, styles)),
+  rectangle: (x, y, w, h, styles, isInteractive) => element(app).create(rectangle(x, y, w, h, styles), isInteractive),
 
-  sprite: (x, y, name, styles) => element(app).create(sprite(x, y, name, styles))
+  sprite: (x, y, name, styles, isInteractive) => element(app).create(sprite(x, y, name, styles), isInteractive)
 
 });
-  
+
 export default element;
