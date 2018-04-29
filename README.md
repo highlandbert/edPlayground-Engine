@@ -23,8 +23,40 @@ You can also make your own development environment, just make sure to add this s
 
 ## Overview
 
+###### Pixi.js App
 <a href="#app" name="app">#</a> playground.<b>app</b>
 
-Exposes the Pixi.js app that runs under edPlayground code, you can use it as you want, even mixing pixi.js code with the playground specific funtions.
+Exposes the Pixi.js app that runs under edPlayground's code, you can use it as you want, even mixing pixi.js code with the playground specific funtions.
 
-<a href="#element" name="element">#</a> playground.<b>element</b>
+###### Basic shapes
+
+<a href="#rectangle" name="rectangle">#</a> playground.<b>rectangle(x, y, w, h, styles)</b>
+
+Creates and returns a rectangle at **x**, **y** position, of **w** and **h** size and with optional **styles**.
+
+<a href="#circle" name="circle">#</a> playground.<b>circle(x, y, r, styles)</b>
+
+Creates and returns a circle at **x**, **y** position, of **r** radius and with optional **styles**.
+
+<a href="#styles" name="styles">#</a> Styles</b>
+
+Used for styling rectangles and circles
+
+```
+{
+  lineWidth: 0,
+  borderRadius: 0,
+  lineColor: 0xCCCCCC,
+  fillColor: 0xCCCCCC,
+  alpha: 1
+}
+```
+
+###### Sprites
+
+
+###### Element and Behaviours
+
+<a href="#elementcreate" name="elementcreate">#</a> playground.<b>element.create( container, isInteractive )</b>
+
+###### Events
