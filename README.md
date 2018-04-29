@@ -94,7 +94,7 @@ These functions are shortcuts:
 var circle = playground.circle(200, 200, 25, { fillColor: 0xFFFF0B });
 var player = playground.element.create(circle, true);
 ```
-VS
+*VS*
 ```
 var player = playground.element.circle(200, 200, 35, { fillColor: 0xFFFF0B }, true);
 ```
