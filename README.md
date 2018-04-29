@@ -58,12 +58,23 @@ Used for styling rectangles and circles
 
 Creates and returns a sprite at **x**, **y** position, located in **uri** and with optional **styles**.
 
-If you want to host the image for the sprite in the level, you have to get a valid **data uri** in Base64 format. The easiest option is this tool: 
+If you want to host the image in the level itself, you have to get a valid **data uri** in Base64 format. I recommend using this tool: 
 
 https://websemantics.uk/tools/image-to-data-uri-converter
 
 ###### Element and Behaviours
 
-<a href="#elementcreate" name="elementcreate">#</a> playground.<b>element.create( container, isInteractive )</b>
+<a href="#elementcreate" name="elementcreate">#</a> playground.<b>element.create(container, isInteractive)</b>
+
+Creates an **element**. The **container** can be a rectangle, a circle or a sprite. If you set **isInteractive** to **true**, you will be able to set a functions that triggers when the element is clicked or tapped.
+
+```
+var circle = playground.element.circle(200, 200, 25, { fillColor: 0xFFFF0B });
+
+circle.interact(function(event) {
+  circle.scale.x += 1;
+  circle.scale.y += 1;
+});
+```
 
 ###### Events
