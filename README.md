@@ -54,6 +54,13 @@ Used for styling rectangles and circles
 
 ###### Sprites
 
+<a href="#sprite" name="sprite">#</a> playground.<b>sprite(x, y, uri, styles)</b>
+
+Creates and returns a sprite at **x**, **y** position, located in **uri** and with optional **styles**.
+
+If you want to host the image for the sprite in the level, you have to get a valid **data uri** in Base64 format. The easiest option is this tool: 
+
+https://websemantics.uk/tools/image-to-data-uri-converter
 
 ###### Element and Behaviours
 
