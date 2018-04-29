@@ -64,17 +64,46 @@ https://websemantics.uk/tools/image-to-data-uri-converter
 
 ###### Element and Behaviours
 
+Every basic shape and every sprite are a [Pixi.js Container](http://pixijs.download/dev/docs/PIXI.Container.html) and you can modify every one of their properties, like **x** and **y**, **scale** and **rotation**, **width** and **height**, etc.
+
 <a href="#elementcreate" name="elementcreate">#</a> playground.<b>element.create(container, isInteractive)</b>
 
-Creates an **element**. The **container** can be a rectangle, a circle or a sprite. If you set **isInteractive** to **true**, you will be able to set a functions that triggers when the element is clicked or tapped.
+Creates and returns an **element**. The **container** can be a rectangle, a circle or a sprite. If you set **isInteractive** to **true**, you will be able to set a functions that triggers when the element is clicked or tapped.
 
 ```
-var circle = playground.element.circle(200, 200, 25, { fillColor: 0xFFFF0B });
+var circle = playground.circle(200, 200, 25, { fillColor: 0xFFFF0B })
+var player = playground.element.create(circle, true);
 
-circle.interact(function(event) {
-  circle.scale.x += 1;
-  circle.scale.y += 1;
+player.interact(function(event) {
+  player.scale.x += 1;
+  player.scale.y += 1;
 });
 ```
 
+An element is also a **container**, but unlike basic shapes or sprites, elements can be interactible and they appear on screen.
+
+<a href="#elementrectangle" name="elementrectangle">#</a> playground.<b>element.rectangle(x, y, w, h, styles, isInteractive)</b>
+<a href="#elementcircle" name="elementcircle">#</a> playground.<b>element.circle(x, y, r, styles, isInteractive)</b>
+<a href="#elementsprite" name="elementsprite">#</a> playground.<b>element.sprite(x, y, name, styles, isInteractive)</b>
+
+These functions are shortcuts:
+
+```
+var circle = playground.circle(200, 200, 25, { fillColor: 0xFFFF0B });
+var player = playground.element.create(circle, true);
+```
+VS
+```
+var player = playground.element.circle(200, 200, 35, { fillColor: 0xFFFF0B }, true);
+```
+
 ###### Events
+
+An edPlayground level can trigger these events:
+
+- playground.**onLevelFinished**. You have to trigger this event when the level is finished, so the edPlayground app knows when to stop and submit the results. Trigger it using playground.**finishLevel()**.
+
+###### Sensors
+
+*TODO*
+
