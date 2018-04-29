@@ -83,7 +83,9 @@ player.interact(function(event) {
 An element is also a **container**, but unlike basic shapes or sprites, elements can be interactible and they appear on screen.
 
 <a href="#elementrectangle" name="elementrectangle">#</a> playground.<b>element.rectangle(x, y, w, h, styles, isInteractive)</b>
+
 <a href="#elementcircle" name="elementcircle">#</a> playground.<b>element.circle(x, y, r, styles, isInteractive)</b>
+
 <a href="#elementsprite" name="elementsprite">#</a> playground.<b>element.sprite(x, y, name, styles, isInteractive)</b>
 
 These functions are shortcuts:
