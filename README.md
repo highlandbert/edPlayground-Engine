@@ -21,12 +21,14 @@ You can also make your own development environment, just make sure to add this s
 ```
 *Coming soon (localhost is a placeholder here)*
 
-## Overview
+## API Reference
 
 ###### Pixi.js App
 <a href="#app" name="app">#</a> playground.<b>app</b>
 
 Exposes the Pixi.js app that runs under edPlayground's code, you can use it as you want, even mixing pixi.js code with edPlayground's specific funtions.
+
+http://pixijs.download/dev/docs/index.html
 
 ###### Basic shapes
 
