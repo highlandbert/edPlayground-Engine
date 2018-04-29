@@ -1,4 +1,4 @@
-# edPlayground-Engine
+# edPlayground's Creation Engine
 
 Create levels for your own edPlayground course.
 
