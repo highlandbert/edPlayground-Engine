@@ -1,6 +1,6 @@
 # edPlayground-Engine
 
-Create levels for your own edPlayground course :simple_smile:.
+Create levels for your own edPlayground course :simple_smile:
 
 ## Basic setup
 
